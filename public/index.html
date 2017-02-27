@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title ng-bind="title"></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet/less" href="./css/index.less">
+    <script src="./framework/less/less.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--<ul>
+            <li><a href="#!/add">add</a></li>
+            <li><a href="#!/list">list</a></li>
+            <li><a href="#!/type">type</a></li>
+            <li><a href="#!/edit">edit</a></li>
+            <li><a href="#!/info">info</a></li>
+            <li><a href="#!/login">login</a></li>
+            <li><a href="#!/register">register</a></li>
+        </ul>-->
+    </header>
+    <nav></nav>
+    <section ng-view></section>
+    <footer></footer>
+</body>
+
+</html>
+<script src="./framework/angular/angular.min.js"></script>
+<script src="./framework/angular/angular-route.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/controllers.js"></script>
+<script src="./js/directives.js"></script>

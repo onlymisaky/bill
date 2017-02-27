@@ -1,0 +1,54 @@
+@import "base.less";
+@import "fonts.css";
+@bgColor: #05ab94;
+@headheight: 50px;
+// 注册
+#register {
+    .head {
+        height: @headheight;
+        background-color: @bgColor;
+        color: #fff;
+        .left {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        h2 {
+            margin-left: 50px;
+            height: @headheight;
+            line-height: @headheight;
+            font-weight: normal;
+        }
+    }
+    .main {
+        padding: 50px 10px;
+        form {
+            box-sizing: border-box;
+            margin: 5px;
+            padding: 10px;
+            input {
+                height: 50px;
+                background-color: #fff;
+            }
+            input[name="email"] {
+                border: 1px solid #ccc;
+                border-radius: 10px 10px 0 0;
+            }
+            input[name="pwd"] {
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+            }
+            input[name="name"] {
+                border: 1px solid #ccc;
+                border-radius: 0 0 10px 10px;
+            }
+            input[type="submit"] {
+                margin-top: 20px;
+                background-color: #00B51D;
+                color: #fff;
+                border-radius: 3px;
+            }
+        }
+    }
+}

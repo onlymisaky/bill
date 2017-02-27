@@ -1,0 +1,82 @@
+/*清除常用有元素默认值*/
+html,
+body,
+header,
+section,
+footer,
+nav,
+div,
+p,
+h2,
+a,
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+}
+/*控制页面大小*/
+html,
+body {
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+/*设置页面字体，颜色*/
+body {
+  font: 16px/1.5 "Microsoft YaHei", "宋体";
+  color: #131313;
+  background-color: #fff;
+}
+img {
+  display: block;
+  width: 100%;
+}
+input {
+  outline: none;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 0 none;
+}
+a {
+  text-decoration: none;
+  color: #969696;
+  font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+/*清除浮动*/
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+/*公共类样式*/
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.w20 {
+  width: 20%;
+}
+.w25 {
+  width: 25%;
+}
+.w50 {
+  width: 50%;
+}
